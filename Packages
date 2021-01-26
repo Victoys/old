@@ -1,34 +1,28 @@
-Package: com.dave1482.powerapp
-Version: 6.0
+Package: com.cydiaba.hongvdfu91
+Version: 1.0
 Architecture: iphoneos-arm
-Maintainer: Dave1482 <dave1482@dave1482.com>
-Pre-Depends: firmware (>= 8.0), system-cmds, shell-cmds, coreutils
-Conflicts: com.dave1482.powerappbeta
-Filename: debs/powerapp.deb
-Size: 411682
-MD5sum: 491e00e0988b57d6b54e50131001ed6e
-SHA1: 7a6567dbf322e7dc9b5569b41f96b5ffe6bb9269
-SHA256: 94ac9ae7b124a9c20252c3c19dcd31e2170855549164187b8088e1e428c3d427
-Section: Utilities
-Description: Reboot, Shutdown, Respring, go into Safemode
-Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, compatible::ios14, compatible::ios15
-Author: Dave1482 <dave1482@dave1482.com>
-Depiction: https://powerapp.dave1482.com/
-Icon: file:///Applications/PowerApp.app/Icon-60.png
-Name: PowerApp
+Filename: debs/dfu.deb
+Size: 52728
+MD5sum: 98522169700b161090fff6eb5693d65c
+SHA1: 938042d84d0ca828b39f39472836d205f9e22aca
+SHA256: 058b879367588184ca9ccbe65e82757e1016153bce759f03db821cf2db7df37e
+Section: 91助手-系统
+Author: 红V <a951515778@qq.com>
+Name: 进入降级DFU模式
 
 Package: com.exile90.icleanerpro
-Version: 7.9.0
+Version: 7.6.4
 Architecture: iphoneos-arm
 Maintainer: Ivano Bilenchi <support@ib-soft.net>
-Depends: firmware (>= 4.0), findutils, apt | apt7
+Pre-Depends: apt, findutils, shell-cmds
+Depends: firmware (>= 4.0)
 Conflicts: org.altervista.exilecom.icleaner
 Replaces: org.altervista.exilecom.icleaner
 Filename: debs/icleanerpro.deb
-Size: 4772402
-MD5sum: 0ce90140ef3ebb38c8fdecda21f9eb7c
-SHA1: 4e9bf12c53b8e2ac07c2d4e5d21219739fe9f2ba
-SHA256: 7b35413010d2afc0c3df2d36d51aca3115a88a53bb2122fa52558e89e3205195
+Size: 3565292
+MD5sum: e82848f686c56f6515f9c6df72d9bc5a
+SHA1: 9d9df839501fe0a57312a7312915945d168a02db
+SHA256: fe7a4de25d581a61b9b5ce049b8fdafe5a1f0ae0758e38176708ac92bccc32ec
 Section: Utilities
 Homepage: http://ib-soft.net/icleaner
 Description: The first real iOS system cleaner & optimizer
@@ -77,6 +71,27 @@ Dev: Matt Clarke <matt@incendo.ws>
 Icon: file:///Applications/ReProvision.app/AppIcon60x60@2x.png
 Name: ReProvision
 
+Package: com.rbt.batterylife
+Version: 1.6.14
+Architecture: iphoneos-arm
+Maintainer: poetic_folly <poetic_folly@modmyi.com>
+Depends: firmware (>= 6.0), mobilesubstrate, preferenceloader
+Conflicts: BatteryLife
+Replaces: BatteryLife
+Filename: debs/batterylife.deb
+Size: 3078590
+MD5sum: dab8654ae3c6fe594e24200a69146dbe
+SHA1: 96244c096bff52a42ae231cc143b856a319816c6
+SHA256: cac558cfab50f6ff60ace1a25b965843bc084a8ecd2c4c6fd92abe8ef766c0da
+Section: Utilities
+Priority: extra
+Homepage: http://modmyi.com/info/batterylife.php
+Description: Displays useful information about your device's battery health
+Author: rbt <rbt@rtapps.de>
+Depiction: http://modmyi.com/info/batterylife.d.php
+Name: BatteryLife
+Sponsor: ModMyi.com <http://modmyi.com/forums/index.php?styleid=31>
+
 Package: com.rileytestut.altdaemon
 Version: 1.0
 Architecture: iphoneos-arm
@@ -92,22 +107,41 @@ Description: AltDaemon allows AltStore to install and refresh apps without a com
 Author: Riley Testut
 Name: AltDaemon
 
-Package: com.victoys.batterylife
-Version: 1.6.14
+Package: com.ryleyangus.liberty
+Version: 0.2.10
 Architecture: iphoneos-arm
-Maintainer: Victoys
-Depends: firmware (>= 6.0), mobilesubstrate, preferenceloader
-Filename: debs/batterylife.deb
-Size: 2101424
-MD5sum: 8094cb5d24fcabd728cdfa25c42502c6
-SHA1: 2e0ae593c08665e7228179f0f6988b5e2f73e78a
-SHA256: 8499a3826220b50876afb4f15261643445afb1f0365b3616b66c1e057608f124
-Section: Utilities
-Description: 显示电池详细信息参数、不支持iOS 11之后的系统
-Author: Victoys
-Dev: Victoys
-Name: BatteryLife
-Sponsor: Victoys
+Maintainer: Ryley Angus
+Installed-Size: 608
+Depends: mobilesubstrate, preferenceloader, applist, firmware (<< 11.0)
+Conflicts: com.ryleyangus.libertylite
+Filename: debs/liberty.deb
+Size: 52376
+MD5sum: 46b38c6552543b34cc46c03433456be7
+SHA1: 070e23c288bf3016ac18d8d3f76c18d2d7774b2d
+SHA256: c6573a0a6c5c7338fc232deaef88537664b52817242402e0f622b01022cd43e6
+Section: Tweaks
+Description: A general purpose jailbreak detection bypass patch. Use the Liberty entry in the Settings app to block (most) apps from detecting your jailbreak. Cydia Substrate can be selectively disabled, but this isn't required for many apps.
+Author: Ryley Angus
+Icon: file:///Library/PreferenceBundles/LibertyPref.bundle/LibertyPref.png
+Name: Liberty
+
+Package: com.ryleyangus.libertylite.beta
+Version: 0.2.12
+Architecture: iphoneos-arm
+Maintainer: Ryley Angus
+Installed-Size: 616
+Depends: mobilesubstrate, preferenceloader, applist
+Conflicts: com.ryleyangus.liberty, com.ryleyangus.libertylite
+Filename: debs/libertylite.deb
+Size: 42210
+MD5sum: 37298170685afadc9b2bf7f636dafba7
+SHA1: f2a120261d0d0ee6ace2deb7508e567cbc76d362
+SHA256: 990c49c7af5807e031d7fa4632e56eb6f5222a1c29002187f88d4de33da684a7
+Section: Tweaks
+Description: A general purpose jailbreak detection bypass patch. Configure the Liberty Lite entry in the Settings app to block (most) apps from detecting your jailbreak. Disabling Substrate/Substitute is not currently supported. Support for both arm64e and armv7 has been enabled in this beta version.
+Author: Ryley Angus
+Icon: file:///Library/PreferenceBundles/LibertyPref.bundle/LibertyPref.png
+Name: Liberty Lite (Beta)
 
 Package: net.angelxwind.appsyncunified
 Version: 84.0
