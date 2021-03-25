@@ -49,28 +49,6 @@ Depiction: http://julio.hackyouriphone.org/description.html?id=com.julioverne.cy
 Icon: file:///Library/PreferenceBundles/CyDownSettings.bundle/CyDown@2x.png
 Name: CyDown
 
-Package: com.matchstic.reprovision
-Version: 0.5.2~EOL
-Architecture: iphoneos-arm
-Maintainer: Matt Clarke <matt@incendo.ws>
-Depends: firmware (>= 9.0)
-Replaces: com.matchstic.Extender-Installer
-Provides: com.matchstic.Extender-Installer
-Filename: debs/reprovision.deb
-Size: 14406348
-MD5sum: 4064144eed72b264038cb91d9e477f1a
-SHA1: 1287ffa0f2919789fc86a96267e8cb3410715ff8
-SHA256: 11efa2b9c737860df3ebe08eeab429bfa664612c4b22b5e8aa237f20785b8e5d
-Section: System
-Priority: optional
-Homepage: https://github.com/Matchstic/Extender-Installer
-Description: Re-sign applications on your device
-Author: Matt Clarke <matt@incendo.ws>
-Depiction: http://incendo.ws/repo/depictions/com.matchstic.reprovision.html
-Dev: Matt Clarke <matt@incendo.ws>
-Icon: file:///Applications/ReProvision.app/AppIcon60x60@2x.png
-Name: ReProvision
-
 Package: com.rbt.batterylife
 Version: 1.6.14
 Architecture: iphoneos-arm
@@ -143,24 +121,67 @@ Author: Ryley Angus
 Icon: file:///Library/PreferenceBundles/LibertyPref.bundle/LibertyPref.png
 Name: Liberty Lite (Beta)
 
-Package: net.angelxwind.appsyncunified
-Version: 84.0
+Package: com.victoys.appsync
+Version: 6.1
 Architecture: iphoneos-arm
-Maintainer: Karen/あけみ <karen@akemi.ai>
-Installed-Size: 496
-Depends: firmware (>= 5.0), firmware (<= 13.7), firmware (<< 12.0) | mobilesubstrate (>= 0.9.5100) | mobilesubstrate (<= 0.9.6301) | mobilesubstrate (= 0.9.7020) | mobilesubstrate (= 0.9.7033) | mobilesubstrate (>= 0.9.7034) | com.ex.substitute (>= 0.1.0), firmware (<< 12.0) | mobilesubstrate (<< 99.0) | com.ex.libsubstitute (>= 0.1.1)
-Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, science.xnu.substitute
-Replaces: us.hackulo.appsync50
-Provides: appsync
+Maintainer: Victoys
+Depends: firmware (>= 6.0), mobilesubstrate
 Filename: debs/appsync.deb
-Size: 42058
-MD5sum: 979c1973c503b9eb4e9e1151d97c4421
-SHA1: e7b5a9a5fe95eef270b1d0e2e70a40a6567a1636
-SHA256: 41dd591135281ca31ed5564ffa283f126bc0da1818691c8601abe6d7c18b7fff
+Size: 19380
+MD5sum: d702900b65c8f156ef244b16d6ebb417
+SHA1: 43e2d0628a3c3f332ae570d4df8e2e43690c76ec
+SHA256: b1fd92649c11d522ee09c406fcdcb4889edb108951a97dd674efec8b6c978628
 Section: Tweaks
-Homepage: https://cydia.akemi.ai/
-Description: Enables the ability to install unsigned/fakesigned iOS applications.
-Author: Linus Yang, Karen/あけみ <karen@akemi.ai>
-Depiction: https://cydia.akemi.ai/?page/net.angelxwind.appsyncunified
-Name: AppSync Unified
+Description: 安装未签名的IPA应用程序
+Author: Victoys
+Name: AppSync
+
+Package: com.victoys.kuaidial
+Version: 0.3.0a4-44
+Architecture: iphoneos-arm
+Maintainer: Victoys
+Depends: mobilesubstrate, preferenceloader, firmware (>= 4.0)
+Filename: debs/kuaidial.deb
+Size: 457704
+MD5sum: c06d48c62d63609e4c6d8dbd4366cedd
+SHA1: eb8b6529c8385c92dc494fb625588d6630e01f03
+SHA256: 58670ca0b0613092ba0a7b9b974b3e1a97d8ca0670d877cb5ef1776f9d176432
+Section: Tweaks
+Description: 电话增强软件、支持iOS 6.1.3
+Author: Victoys
+Dev: Victoys
+Name: KuaiDial
+Sponsor: Victoys
+
+Package: com.victoys.localiapstore
+Version: 1.4-1
+Architecture: iphoneos-arm
+Maintainer: Victoys
+Depends: firmware (>= 5.1), mobilesubstrate, preferenceloader
+Filename: debs/localiapstore.deb
+Size: 42316
+MD5sum: d9112b9d607749c285af505f8c0ecf4a
+SHA1: ee92ecc35c595eb6aabd8307c0bbb42b234a1fe1
+SHA256: fa4b7f87075d4ac6efdd6b2e3a5c108544f7143fbc50cc00f9ed30c662d99dbf
+Section: Tweaks
+Description: 软件内购破解、已完全汉化
+Author: Victoys
+Dev: Victoys
+Name: LocalIAPStore
+Sponsor: Victoys
+
+Package: com.victoys.reprovision
+Version: 0.5.2-1
+Architecture: iphoneos-arm
+Maintainer: Victoys
+Depends: firmware (>= 10.0)
+Filename: debs/reprovision.deb
+Size: 13740888
+MD5sum: 05b783160386bfea5c99ce54ba36ce28
+SHA1: 7480268e1752d6b1dc6ebb3d696888515ce28f80
+SHA256: 3af5f959376dd80676d663e0ec0392f20bed2b15562baa32a1388e2984dcf01c
+Section: System
+Description: 自签名IPA应用，不支持iOS14，替换2021.01.28最新证书文件
+Author: Victoys
+Name: ReProvision
 
