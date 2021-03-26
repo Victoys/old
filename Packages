@@ -126,7 +126,7 @@ Version: 6.1
 Architecture: iphoneos-arm
 Maintainer: Victoys
 Depends: firmware (>= 6.0), mobilesubstrate
-Filename: debs/appsync.deb
+Filename: debs/appsync61.deb
 Size: 19380
 MD5sum: d702900b65c8f156ef244b16d6ebb417
 SHA1: 43e2d0628a3c3f332ae570d4df8e2e43690c76ec
